@@ -21,7 +21,7 @@ const Services = () => {
                 {services.map(service => {
                     const { title, image, description } = service;
                     return (
-                        <div className="service rounded-md bg-purple-100">
+                        <div className="service rounded-md bg-green-100">
                             <img className="rounded-md" src={image} style={{ height: "300px" }} alt="" />
                             <h3 className="text-2xl font-bold my-3">{title}</h3>
                             <p className="text-lg">{description.slice(0, 124)}</p>
