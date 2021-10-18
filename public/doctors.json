@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Tom Adams",
+        "expert": "Dental Implants",
+        "image": "./images/doctors/1.jpg",
+        "phone": 88038489330,
+        "email": "tom@demo-mail.com"
+    },
+    {
+        "id": 2,
+        "name": "Miranda Ruiz, MD",
+        "expert": "Hygiene Treatments",
+        "image": "./images/doctors/2.jpg",
+        "phone": 8785858500,
+        "email": "miranda@demo-mail.com"
+    },
+    {
+        "id": 3,
+        "name": "Amy Hollan",
+        "expert": "Porcelain Veneers",
+        "image": "./images/doctors/3.jpg",
+        "phone": 9658417312,
+        "email": "amy@demo-mail.com"
+    },
+    {
+        "id": 4,
+        "name": "John Pierson",
+        "expert": "Gum Disease Treatment",
+        "image": "./images/doctors/4.jpg",
+        "phone": 9485153641,
+        "email": "john@demo-mail.com"
+    }
+]
