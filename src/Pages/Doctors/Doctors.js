@@ -12,12 +12,11 @@ const Doctors = () => {
     }, [])
     return (
         <div className="doctors-section">
-            <div className="bg-purple-100 py-20">
+            <div className="bg-purple-200 py-20">
                 <div className="flex items-center justify-around">
                     <div>
                         <p className="text-lg text-green-500">Our Doctors</p>
-                        <h2 className="text-4xl font-bold py-6">Meet our award-winning <br /> dental team</h2>
-                        <p className="text-lg pb-6">We know it can be difficult searching for a personal or family <br /> dentist. At our office we take pride in creating and maintaining <br /> beautiful and healthy smiles for our patients..</p>
+                        <h2 className="text-4xl font-bold py-6">Contact us easily <br /> online, by phone or by <br /> dropping in</h2>
                         <button className="bg-green-400 px-6 py-4 text-lg font-semibold text-white">Request Appointment</button>
                     </div>
                     <div>
