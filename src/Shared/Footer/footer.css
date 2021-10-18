@@ -1,7 +1,23 @@
+.footer-section{
+    margin-top: 150px;
+}
 .footer-menu a{
     line-height: 46px;
 }
 
 .contact-info{
     line-height: 32px;
+}
+
+.input{
+    border: 2px solid #3ee0aa;
+    width: 350px;
+}
+
+.top-footer{
+    margin: 30px 80px 80px 80px;
+}
+
+.bottom-footer{
+    margin: 30px 0;
 }
