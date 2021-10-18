@@ -12,7 +12,7 @@ const Home = () => {
                     <h2 className="font-bold text-6xl mb-5">A first class <br /> dentistry <br /> experience</h2>
                     <p className="text-xl font-semibold ">Because your smile is the beauty of your soul.</p>
                     <div className="flex items-center justify-between">
-                        <button className="px-6 py-3 bg-green-400 mt-6 font-bold text-white rounded-md">Book Online</button>
+                        <button className="px-6 py-3 bg-green-400 mt-6 font-bold text-white rounded">Book Online</button>
                         <div className="flex items-center justify-center mt-6">
                             <div className="bg-white p-4 rounded-full w-1/4">
                                 <BsTelephoneForward />
