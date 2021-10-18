@@ -1,0 +1,11 @@
+.menu a{
+    border-bottom: 3px solid transparent;
+}
+
+.menu a:hover{
+    border-bottom: 3px solid #10B981;
+    transition: 0.9s ease;
+}
+.menu a.active{
+    border-bottom: 3px solid #10B981;
+}
