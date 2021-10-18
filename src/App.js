@@ -6,9 +6,9 @@ import Home from './Pages/Home/Home';
 import Blog from './Pages/Blog/Blog';
 import Doctors from './Pages/Doctors/Doctors';
 import Contact from './Pages/Contact/Contact';
-import './App.css';
 import PriceGuide from './Pages/PriceGuide/PriceGuide';
 import NotFound from './Pages/NotFound/NotFound';
+import './App.css';
 
 function App() {
   return (
