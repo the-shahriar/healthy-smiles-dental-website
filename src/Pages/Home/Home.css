@@ -6,7 +6,10 @@
     margin: 200px 0 0 0;
 }
 
-.main{
-    margin-top: 200px;
-    text-align: center;
+.heading{
+    line-height: 70px;
+}
+
+.more-about{
+    margin: 100px 0 0 0;
 }
