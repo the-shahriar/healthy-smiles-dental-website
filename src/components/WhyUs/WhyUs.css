@@ -4,6 +4,9 @@
 .left{
     margin: -110px 0 0 0;
 }
+.left img{
+    border-radius: 20px;
+}
 .right {
     padding: 50px 0;
 }
