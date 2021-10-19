@@ -4,7 +4,8 @@ import { BsGoogle } from "react-icons/bs";
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-    const { googleSignIn, createUserWithEmail, setUser } = useAuth();
+    const { allContext } = useAuth();
+    const { googleSignIn, createUserWithEmail, setUser } = allContext;
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
