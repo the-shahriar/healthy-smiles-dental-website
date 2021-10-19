@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendPasswordResetEmail } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeFirebaseApp from "../Firebase/firebase.init";
 
@@ -39,40 +39,59 @@ const useFirebase = () => {
     // ----------create account using email and password------------
 
     const createUserWithEmail = (email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                console.log(user);
+        return createUserWithEmailAndPassword(auth, email, password)
 
-            })
             .catch((error) => {
-                const errorCode = error.code;
                 const errorMessage = error.message;
+                setError(errorMessage);
 
             });
     }
 
 
-    const signInWithEmail = (email, password) => {
+    const updateUserProfile = (userImage) => {
+        updateProfile(auth.currentUser, {
+            photoURL: { userImage }
+        })
+            .then(() => {
+
+            })
+    }
+
+
+    const logInWithEmail = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Signed in 
-                const user = userCredential.user;
+                setUser(userCredential.user);
             })
             .catch((error) => {
-                const errorCode = error.code;
                 const errorMessage = error.message;
+                setError(errorMessage);
+            });
+    }
+
+    const handleResetPassword = (email) => {
+        sendPasswordResetEmail(auth, email)
+            .then(result => { })
+
+            .catch((error) => {
+                const errorMessage = error.message;
+                setError(errorMessage);
             });
     }
 
     return {
         user,
+        setUser,
         isLoading,
         createUserWithEmail,
-        signInWithEmail,
+        logInWithEmail,
         googleSignIn,
         logOut,
+        error,
+        updateUserProfile,
+        handleResetPassword
     }
 
 }
