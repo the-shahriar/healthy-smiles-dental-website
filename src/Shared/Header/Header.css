@@ -6,6 +6,19 @@
     border-bottom: 3px solid #10B981;
     transition: 0.9s ease;
 }
-.menu a.active{
-    border-bottom: 3px solid #10B981;
+
+.user-image {
+    border-radius: 50px;
+    height: 50px;
+}
+
+.user-toggle {
+    width: 160px;
+    background-color: rgb(235, 232, 232);
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 11%;
+    left: 84%;
+    border-radius: 10px;
 }

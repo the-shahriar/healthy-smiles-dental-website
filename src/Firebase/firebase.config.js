@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    apiKey: "AIzaSyBS4ZTlRwzaHhdeViHVaFxo4VyuFNGGJPM",
+    authDomain: "healthy-smiles-app.firebaseapp.com",
+    projectId: "healthy-smiles-app",
+    storageBucket: "healthy-smiles-app.appspot.com",
+    messagingSenderId: "83701476706",
+    appId: "83701476706:web:da86a92a62d2aa9fe0103b"
 };
 
 export default firebaseConfig;

@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../../assets/images/contacts-1.jpg'
-import { BsTelephoneForward, BsFillEnvelopeFill } from "react-icons/bs";
+import { BsTelephoneForward } from "react-icons/bs";
 import ContactMap from '../../components/MyGoogleMap/ContactMap';
 import './Contact.css';
 import ImageGallery from '../../components/ImageGallery/ImageGallery';
@@ -15,7 +15,7 @@ const Contact = () => {
                         <h2 className="text-4xl font-bold py-6">Contact us easily <br /> online, by phone or by <br /> dropping in</h2>
                         <div className="flex items-center justify-between">
                             <button className="px-6 py-3 bg-green-400 mt-6 font-bold text-white rounded">Book Online</button>
-                            <div className="flex items-center justify-center mt-6 contact-right">
+                            <div className="flex items-center justify-center mt-6">
                                 <div className="bg-white p-4 rounded-full w-1/4">
                                     <BsTelephoneForward />
                                 </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                         <input type="mail" name="mail" className="input block py-4 px-2 my-6 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your email address*" />
                         <textarea className="input block py- px-2 border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent w-full" rows="5" cols="100" name="comment" placeholder="Enter your text">
                         </textarea>
-                        <button className="bg-green-300 px-32 py-4 mt-6 text-white font-semibold text-lg block "><BsFillEnvelopeFill className="inline" /> Subscribe</button>
+                        <button className="bg-green-300 px-32 py-4 mt-6 text-white font-semibold text-lg block "> Submit</button>
                     </div>
                 </div>
 

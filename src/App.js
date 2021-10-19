@@ -6,9 +6,9 @@ import Home from './Pages/Home/Home';
 import Blog from './Pages/Blog/Blog';
 import Doctors from './Pages/Doctors/Doctors';
 import Contact from './Pages/Contact/Contact';
-import PriceGuide from './Pages/PriceGuide/PriceGuide';
 import NotFound from './Pages/NotFound/NotFound';
 import './App.css';
+import Login from './Pages/Login/Login';
 
 function App() {
   return (
@@ -31,8 +31,8 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
-          <Route path="/price-guide">
-            <PriceGuide></PriceGuide>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

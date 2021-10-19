@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PriceGuide = () => {
+const Register = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const PriceGuide = () => {
     );
 };
 
-export default PriceGuide;
+export default Register;
