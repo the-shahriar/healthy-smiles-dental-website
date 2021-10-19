@@ -4,11 +4,15 @@ import useAuth from '../../hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
     const { allContext } = useAuth();
-    const { user } = allContext;
+    const { user, isLoading } = allContext;
+    if (isLoading) {
+        return <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+        </svg>
+    }
     return (
         <Route
             {...rest}
-            render={({ location }) => user?.email ? children :
+            render={({ location }) => user.email ? children :
                 <Redirect
                     to={{
                         pathname: "/login",

@@ -22,10 +22,10 @@ const Header = () => {
             </div>
             <div className="button flex">
 
-                <Link to="/"><button className="px-6 py-3 bg-green-400 mr-5 font-bold text-white rounded-md hover:bg-blue-300">Book Online</button></Link>
+                <Link to="/"><button className="px-6 py-3 bg-green-400 mr-5 font-bold text-white rounded-md hover:bg-blue-300 online-book">Book Online</button></Link>
 
                 {user.email ?
-                    <button onClick={() => setUserToggle(!userToggle)}><h2 className="font-bold text-lg">{user.email}</h2></button>
+                    <button onClick={() => setUserToggle(!userToggle)}><h2 className="font-bold text-lg user-email">{user.email}</h2></button>
                     :
                     <Link to="/login"><button className="px-6 py-3 bg-green-400 font-bold text-white rounded-md hover:bg-blue-300">Login</button></Link>
                 }

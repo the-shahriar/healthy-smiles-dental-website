@@ -6,7 +6,7 @@ import './Login.css';
 
 const Login = () => {
     const { allContext } = useAuth();
-    const { googleSignIn } = allContext;
+    const { googleSignIn, logInWithEmail, setUser } = allContext;
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -18,14 +18,27 @@ const Login = () => {
             })
     }
 
+    const handleLogin = (e) => {
+        e.preventDefault();
+        const email = e.target.logemail.value;
+        const password = e.target.logpassword.value;
+        logInWithEmail(email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                setUser(user);
+                history.push(redirect_uri);
+            })
+    }
+
     return (
         <div className="bg-purple-100">
             <div className="login pt-32">
                 <h2 className="text-4xl font-semibold text-green-400 mb-6 text-center">Login to your account</h2>
                 <div className="flex items-center justify-center">
-                    <form>
-                        <input type="mail" name="mail" className="input block py-4 px-2 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your email address*" />
-                        <input type="password" name="password" className="input block py-4 px-2 my-6 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your password*" />
+                    <form onSubmit={handleLogin}>
+                        <input type="email" name="logemail" className="input block py-4 px-2 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your email address*" />
+                        <input type="password" name="logpassword" className="input block py-4 px-2 my-6 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your password*" />
                         <input type="submit" value="Login" className="bg-green-300 text-white font-semibold text-md login-btn cursor-pointer" />
                     </form>
                 </div>
