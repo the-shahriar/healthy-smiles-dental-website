@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+    .about{
+        flex-direction: column;
+    }
+    .req-appoint{
+        margin-bottom: 20px;
+    }
+
+    .doc-container{
+        padding: 10px;
+    }
+    
+    .doctors{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .doctor{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

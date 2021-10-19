@@ -1,16 +1,14 @@
-import React, { memo, useEffect, useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router';
-import useService from '../../hooks/useService';
+import Services from './Services';
 
-const Service = memo((props) => {
+const Service = () => {
     const { id } = useParams();
-    const service = useService();
-    console.log(service);
     return (
         <div>
 
         </div>
     );
-});
+};
 
 export default Service;

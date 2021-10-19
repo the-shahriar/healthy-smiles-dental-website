@@ -17,14 +17,14 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center">
                     <input type="mail" name="mail" className="input py-4 px-2 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your email address*" />
-                    <button className="bg-green-300 px-5 py-4 text-white font-semibold text-lg"><BsFillEnvelopeFill className="inline" /> Subscribe</button>
+                    <button className="bg-green-300 px-5 py-4 text-white font-semibold text-lg subscribe-btn"><BsFillEnvelopeFill className="inline" /> Subscribe</button>
                 </div>
             </div>
             <div className="mt-6 mb-3 flex justify-center">
                 <hr />
             </div>
             {/* Bottom footer */}
-            <div className="bg-white flex items-center justify-around py-5 middle-footer">
+            <div className="bg-white grid grid-cols-4 gap-3 py-5 middle-footer">
                 <div className="footer-menu">
                     <h2 className="font-bold text-2xl mb-5">Resources</h2>
                     <Link to="/home" className="font-semibold text-md block">Home</Link>
@@ -82,6 +82,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../assets/images/doctors-1.jpg';
+import './Doctors.css';
 
 const Doctors = () => {
     const [doctors, setDoctors] = useState([]);
@@ -13,11 +14,11 @@ const Doctors = () => {
     return (
         <div className="doctors-section">
             <div className="bg-purple-200 py-20">
-                <div className="flex items-center justify-around">
-                    <div>
+                <div className="flex items-center justify-around about">
+                    <div className="doc-container">
                         <p className="text-lg text-green-500">Our Doctors</p>
                         <h2 className="text-4xl font-bold py-6">Contact us easily <br /> online, by phone or by <br /> dropping in</h2>
-                        <button className="bg-green-400 px-6 py-4 text-lg font-semibold text-white">Request Appointment</button>
+                        <button className="bg-green-400 px-6 py-4 text-lg font-semibold text-white req-appoint">Request Appointment</button>
                     </div>
                     <div>
                         <img src={img} alt="" />
@@ -27,7 +28,7 @@ const Doctors = () => {
 
             {/* Doctor section */}
             <div className="doctors mx-60 my-20">
-                <div className="grid grid-cols-2 gap-20">
+                <div className="grid grid-cols-2 gap-20 doctor">
                     {doctors.map(doctor => {
                         const { id, name, expert, image, phone, email } = doctor;
                         return (

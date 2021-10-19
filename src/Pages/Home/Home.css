@@ -16,3 +16,45 @@
 .more-about{
     margin: 100px 0 0 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .heading{
+        margin-top: 50px;
+    }
+
+    .book-appointment{
+        flex-direction: column;
+        float: left;
+    }
+
+    .right-part {
+        margin-top: 20px;
+    }
+
+    .right-part img{
+        width: 100%;
+    }
+
+    .home-part{
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .book-online{
+        margin-left: -24px;
+    }
+
+    .more-about{
+        margin: 20px 0 0 0;
+    }
+
+    .footer-menu{
+        float: left;
+    }
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import img from '../../assets/images/home-8.jpg';
+import './OfferService.css';
 
 const OfferService = () => {
     return (
-        <div className="flex items-center justify-around">
+        <div className="flex items-center justify-around offers">
             <div>
                 <p className="text-lg text-green-500">Includes free consultation*</p>
                 <h2 className="text-4xl font-bold py-6">Get Complete Dental <br /> Implant: <span className="text-purple-500">Save 15%</span></h2>

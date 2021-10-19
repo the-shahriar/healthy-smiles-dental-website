@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaCalendarAlt } from "react-icons/fa";
 import ImageGallery from '../../components/ImageGallery/ImageGallery';
+import './Blog.css';
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);

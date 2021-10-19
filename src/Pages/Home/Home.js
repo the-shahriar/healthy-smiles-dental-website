@@ -15,13 +15,15 @@ const Home = () => {
                 <div className="left-part">
                     <h2 className="font-bold text-6xl mb-5 heading">A first class <br /> dentistry <br /> experience</h2>
                     <p className="text-xl font-semibold ">Because your smile is the beauty of your soul.</p>
-                    <div className="flex items-center justify-between">
-                        <button className="px-6 py-3 bg-green-400 mt-6 font-bold text-white rounded">Book Online</button>
-                        <div className="flex items-center justify-center mt-6">
-                            <div className="bg-white p-4 rounded-full w-1/4">
+                    <div className="flex items-center justify-between book-appointment">
+                        <button className="px-6 py-3 bg-green-400 mt-6 font-bold text-white rounded book-online">Book Online</button>
+                        <div className="flex items-center justify-center mt-6 ">
+                            <div className="bg-white p-4 rounded-full w-1/4 call-icon">
                                 <BsTelephoneForward />
                             </div>
-                            <p className="text-lg font-semibold ml-2"><a href="tel:1-800-123-1234">1-800-123-1234</a></p>
+                            <p className="text-lg font-semibold ml-2">
+                                <a href="tel:1-800-123-1234">1-800-123-1234</a>
+                            </p>
                         </div>
                     </div>
 
@@ -41,7 +43,7 @@ const Home = () => {
 
             {/* Section */}
             <div className="more-about bg-purple-100">
-                <div className="flex items-center justify-around">
+                <div className="flex items-center justify-around home-part">
                     <div>
                         <img src={img2} alt="" />
                     </div>

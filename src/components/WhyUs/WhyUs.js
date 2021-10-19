@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const WhyUs = () => {
     return (
         <div className="why-us">
-            <div className="bg-green-100 flex items-center justify-around">
+            <div className="bg-green-100 flex items-center justify-around section-container">
                 <div className="left">
                     <img src={img} alt="" />
                 </div>

@@ -19,7 +19,11 @@
 }
 
 .middle-footer{
-    margin: 30px 0;
+    padding: 30px 80px;
+}
+
+.google-map{
+    margin-left: -50px;
 }
 
 .bottom-footer{
@@ -34,4 +38,42 @@ hr{
 }
 .icon{
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .top-footer{
+        flex-direction: column;
+    }
+    .top-footer{
+        margin: 10px;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    .subscribe-btn{
+        padding: 10px ;
+    }
+
+    .middle-footer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 10px;
+    }
+
+    .google-map {
+        margin: 0;
+    }
+    
+    .bottom-footer{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .bottom-footer p{
+        font-size: 15px;
+    }
+        
 }

@@ -6,3 +6,27 @@
 .service{
     padding: 30px 30px 60px 30px;
 }
+
+.service img{
+    height: 300px;
+}
+
+
+@media only screen and (max-width: 600px){
+
+.services{
+    margin: 80px 10px 10px 10px;
+    height: auto;
+}
+.service-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.service{
+    padding: 0;
+}
+.service img{
+    height: 100%;
+    width: 100%;
+}
+}

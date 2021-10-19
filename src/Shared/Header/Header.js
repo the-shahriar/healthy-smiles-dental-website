@@ -7,6 +7,7 @@ import './Header.css';
 const Header = () => {
     const [userToggle, setUserToggle] = useState(false)
     const { user, logOut } = useAuth();
+
     return (
         <div className="header flex items-center justify-around py-4">
             <div className="nav-brand">
@@ -15,7 +16,7 @@ const Header = () => {
             <div className="menu">
                 <Link to="/home" className="mr-5 font-semibold text-xl">Home</Link>
                 <Link to="/blog" className="mx-5 font-semibold text-xl ">Blog</Link>
-                <Link to="/doctors" className="mx-5 font-semibold text-xl ">Doctor</Link>
+                <Link to="/doctors" className="mx-5 font-semibold text-xl">Doctor</Link>
                 <Link to="/contact" className="font-semibold text-xl">Contact</Link>
             </div>
             <div className="button flex">

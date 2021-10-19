@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <div>
             <div className="bg-purple-200 py-20">
-                <div className="flex items-center justify-around">
+                <div className="flex items-center justify-around contact-section">
                     <div>
                         <p className="text-lg text-green-500">Contact Us</p>
                         <h2 className="text-4xl font-bold py-6">Contact us easily <br /> online, by phone or by <br /> dropping in</h2>
@@ -23,7 +23,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="image">
                         <img src={img} alt="" />
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                     Have a question? Just send our admin team a message and we’ll get back to <br /> you as quickly as possible.
                 </p>
                 <div className="flex items-center justify-center mt-10">
-                    <div>
+                    <div className="form">
                         <input type="text" name="text" className="input block py-4 px-2 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your name*" />
                         <input type="mail" name="mail" className="input block py-4 px-2 my-6 border-green-400 mr-5 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" placeholder="Enter your email address*" />
                         <textarea className="input block py- px-2 border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent w-full" rows="5" cols="100" name="comment" placeholder="Enter your text">

@@ -90,8 +90,7 @@ const useFirebase = () => {
         googleSignIn,
         logOut,
         error,
-        updateUserProfile,
-        handleResetPassword
+        updateUserProfile
     }
 
 }

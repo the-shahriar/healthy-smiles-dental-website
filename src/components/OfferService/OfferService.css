@@ -1,0 +1,7 @@
+@media only screen and (max-width: 600px) {
+    .offers{
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+}

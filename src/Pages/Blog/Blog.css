@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+    .blogs{
+        margin: 0;
+        padding: 10px;
+    }
+
+
+    .blog p{
+        font-size: 20px;
+        text-align: justify;
+    }
+}

@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const { googleSignIn, handleResetPassword } = useAuth();
+    const { googleSignIn } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -29,9 +29,7 @@ const Login = () => {
                     </form>
                 </div>
                 <p className="text-md text-center mt-4">Dont have any account? <Link to="/register" className="text-green-400">Register here</Link></p>
-                <div className="flex justify-center">
-                    <button onClick={handleResetPassword} className="bg-green-300 text-md px-6 py-2 my-3 text-white">Forgot password?</button>
-                </div>
+
                 <p className="text-center text-md">-----------------------or-----------------------</p>
                 <div className="flex mt-4">
                     <button onClick={handleGoogleLogin} className="mx-auto border-2 border-green-400 px-24 py-3 text-lg">
