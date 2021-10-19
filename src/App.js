@@ -9,6 +9,8 @@ import Contact from './Pages/Contact/Contact';
 import NotFound from './Pages/NotFound/NotFound';
 import './App.css';
 import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -22,9 +24,9 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/blog">
+          <PrivateRoute path="/blog">
             <Blog></Blog>
-          </Route>
+          </PrivateRoute>
           <Route path="/doctors">
             <Doctors></Doctors>
           </Route>
@@ -33,6 +35,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
