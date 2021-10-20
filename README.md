@@ -4,22 +4,22 @@
 
 # Project Overview
 
-<h2>What's in the project<h4>
+<h4>What's in the project<h4>
 
-<li>React<li>
-<li>Tailwind CSS<li>
-<li>React Router<li>
-<li>React Hooks<li>
-<li>Custom Hooks<li>
-<li>Context API<li>
-<li>React Icons<li>
-<li>Private Route<li>
-<li>Firebase Register and Login<li>
+<li>React
+<li>Tailwind CSS
+<li>React Router
+<li>React Hooks
+<li>Custom Hooks
+<li>Context API
+<li>React Icons
+<li>Private Route
+<li>Firebase Register and Login
 
-<h2>Purpose of the project<h2>
+<h4>Purpose of the project
 
-<li>This is a dental website<li>
-<li>User can create an account manually or via google<li>
-<li>User can login to his/her account<li>
-<li>User can get service by book from the website<li>
-<li>Lastly, user can logout from the webiste<li>
+<li>This is a dental website
+<li>User can create an account manually or via google
+<li>User can login to his/her account
+<li>User can get service by book from the website
+<li>Lastly, user can logout from the webiste
