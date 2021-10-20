@@ -1,17 +1,17 @@
-.heading{
+.heading-post{
     border-left: 10px solid rgb(20, 167, 142);
     padding-left: 10px;
     line-height: 40px;
 }
 
 @media only screen and (max-width: 600px) {
-    .service-container{
+    .service-containerr{
         margin: 0;
         padding: 10px;
         margin-top: 30px;
     }
 
-    .service-container p{
+    .service-containerr p{
         text-align: justify;
     }
     

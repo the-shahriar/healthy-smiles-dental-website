@@ -11,7 +11,7 @@ import './App.css';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import Service from './Pages/Services/Service';
+import SingleService from './Pages/SingleService/SingleService';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
             <Contact></Contact>
           </Route>
           <PrivateRoute path="/service/:serviceId">
-            <Service></Service>
+            <SingleService></SingleService>
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>

@@ -25,10 +25,6 @@
         display: block;
     }
 
-    .online-book{
-        display: none;
-    }
-
     .user-email{
         background-color: lightgrey;
         padding: 10px;
@@ -38,5 +34,21 @@
     .menu{
         margin-top: 20px;
         padding-left: 10px;
+    }
+
+    .nav-brand{
+        margin-left: -10px;
+    }
+    .ul-div{
+        margin-left: -16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .button{
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    .online-book{
+        float: left;
     }
 }

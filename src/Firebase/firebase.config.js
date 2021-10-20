@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBS4ZTlRwzaHhdeViHVaFxo4VyuFNGGJPM",
-    authDomain: "healthy-smiles-app.firebaseapp.com",
-    projectId: "healthy-smiles-app",
-    storageBucket: "healthy-smiles-app.appspot.com",
-    messagingSenderId: "83701476706",
-    appId: "83701476706:web:da86a92a62d2aa9fe0103b"
-};
+    apiKey: "AIzaSyCI-EyEQw4PpxJ8rpzNmAONirhVNBnvf7s",
+    authDomain: "healthy-smiles-app-6241c.firebaseapp.com",
+    projectId: "healthy-smiles-app-6241c",
+    storageBucket: "healthy-smiles-app-6241c.appspot.com",
+    messagingSenderId: "536605720549",
+    appId: "1:536605720549:web:33f9d7503de3427596390c"
+}
 
 export default firebaseConfig;

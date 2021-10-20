@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MyGoogleMap from '../../components/MyGoogleMap/MyGoogleMap';
 import { BsFillEnvelopeFill, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import './footer.css';
+import './Footer.css';
 
 const Footer = () => {
     return (
