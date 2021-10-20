@@ -41,41 +41,17 @@ const useFirebase = () => {
     const createUserWithEmail = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
 
-            .catch((error) => {
-                const errorMessage = error.message;
-                setError(errorMessage);
-
-            });
-    }
-
-
-    const updateUserProfile = (userImage) => {
-        updateProfile(auth.currentUser, {
-            photoURL: { userImage }
-        })
-            .then(() => {
-
-            })
     }
 
 
     const logInWithEmail = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
-
-            .catch((error) => {
-                const errorMessage = error.message;
-                setError(errorMessage);
-            });
     }
 
     const handleResetPassword = (email) => {
         sendPasswordResetEmail(auth, email)
             .then(result => { })
 
-            .catch((error) => {
-                const errorMessage = error.message;
-                setError(errorMessage);
-            });
     }
 
     return {
@@ -86,8 +62,7 @@ const useFirebase = () => {
         logInWithEmail,
         googleSignIn,
         logOut,
-        error,
-        updateUserProfile
+        handleResetPassword
     }
 
 }
